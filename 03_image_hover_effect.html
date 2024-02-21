@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #box {
+            height: 380px;
+            width: 300px;
+            background-color: rgb(20, 197, 220);
+            overflow: hidden;
+        }
+
+        #box img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all ease 1s;
+        }
+
+        #box:hover img {
+            scale: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" alt="Image">
+    </div>
+</body>
+</html>
